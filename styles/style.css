@@ -5,7 +5,9 @@
             url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap') format("truetype");
     ;
 }
-
+.hide {
+    display: none !important;
+}
 body {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -24,6 +26,40 @@ p {
     line-height: 1.8;
 }
 
+.title-wrapper {
+    margin-bottom: 60px;
+}
+.title {
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #676770;
+    margin-bottom: 17px;
+}
+.subtitle {
+    font-size: 17px;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #8E8E9C;
+}
+
+
+.common-section {
+    text-align: center;
+    padding: 80px 0;
+}
+.common-section--dark {
+    background-color: #192024;
+}
+.common-section--dark * {
+    color: #fff;
+}
+.common-section--dark .subtitle {
+    color: #e8e8e8;
+}
+
 /*              HEADER              */
 
 .header {
@@ -33,6 +69,7 @@ p {
     width: 100%;
     position: fixed;
     background-color: #fff;
+    box-shadow: 0 0 5px rgba(25,32,36,0.2);
     z-index: 100;
 }
 .header__container {
@@ -135,4 +172,65 @@ p {
 .link-primary:active {
     background-color: #41A6FF;
     transition: background-color 100ms;
+}
+
+/*                  ABOUT               */
+
+
+.about .cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 20px;
+}
+.about .card {
+    width: 300px;
+    border: 1px solid #DCEBF7;
+    border-radius: 5px;
+    padding: 36px 16px 23px 16px;
+}
+
+.about .card img {
+    margin-bottom: 20px;
+    width: 94px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.about .card h4 {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    color: #676770;
+    margin-bottom: 15px;
+}
+
+/*              SERVICES                */
+
+.services .cards-wrapper {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.services .card {
+    width: 45%;
+    padding: 15px;
+}
+
+.services .card img {
+    margin-bottom: 20px;
+}
+
+.services .card h4 {
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+}
+
+.services .card .link {
+    margin-top: 15px;
 }
