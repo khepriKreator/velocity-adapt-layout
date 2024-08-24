@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Open Sans';
+    src:
+            local("../fonts/OpenSans-VariableFont_wdth,wght.ttf"),
+            url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap') format("truetype");
+    ;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+
+.container {
+    max-width: 970px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+p {
+    color: #6A859C;
+    line-height: 1.8;
+}
+
+/*              HEADER              */
+
+.header {
+    padding: 20px 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 100;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 25px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #69B9FF;
+}
+
+.header__nav ul {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+}
+.header__nav a {
+    font-size: 16px;
+    color: #676770;
+}
+
+.header__nav a:hover {
+    color: #0082F3;
+    transition: color 300ms;
+}
+
+.header__nav a:active {
+    color: #0065BD;
+}
+
+/*              MAIN                */
+
+
+
+/*              WELCOME             */
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 600px;
+    height: 100vh;
+    color: #fff;
+    background-color: #292935;
+    background-image: url('../images/welcome-bg.png');
+    background-size: cover;
+    background-position: center;
+    padding: 195px 0;
+}
+.welcome__heading {
+    font-size: 59px;
+    line-height: 1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+.welcome__links > * + * {
+    margin-left: 20px;
+}
+
+.link {
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 10px 31px;
+}
+.link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    transition: background-color 300ms, border-color 300ms;
+}
+.link:active {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 100ms, border-color 100ms;
+}
+.link-primary {
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #69B9FF;
+    border-radius: 4px;
+    padding: 12px 31px;
+}
+
+.link-primary:hover {
+    background-color: #9BD0FF;
+    transition: background-color 300ms;
+}
+.link-primary:active {
+    background-color: #41A6FF;
+    transition: background-color 100ms;
+}
